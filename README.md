@@ -1,6 +1,6 @@
 ## Test tasks
 
-###Task 1
+### Task 1
 Write simple REST api in nodejs that calculates monthly rate based on given conditions:
 * Down Payment
 * Number of months
@@ -8,13 +8,13 @@ Write simple REST api in nodejs that calculates monthly rate based on given cond
 * Final payment
 * Final payment is optional value and is considered as additional final rate after the amount of selected months passed.
 
-####Before start:
+#### Before start:
 `cd tasks/rest-api && npm i`
 
-####Start:
+#### Start:
 `export PORT=3000 && npm start`
 
-####Testing
+#### Testing
 Make a POST request:
 
 `curl -d '{"downPayment": 2000, "numberOfMonths": 12, "interestRate": 10}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/payment`
@@ -27,13 +27,13 @@ Expected response:
 ### Task 2
 Create method (in php, js or ts) that acceppts Gross price and calculates Net price out of given tax (VAT) rate as parameter.
 
-####Before start:
+#### Before start:
 `cd tasks/method`
 
-####Testing:
+#### Testing:
 `node test.js`
 
-###Task 3
+### Task 3
 Given following arrays:
 ```javascript
 const arr1 = [[2], 3, {}, [1, 2]] // [2, 3, 1, 2]
@@ -47,9 +47,9 @@ console.log(arr1.flatCustom())
 console.log(arr2.flatCustom())
 console.log(arr3.flatCustom())
 ```
-####Before task
+#### Before task
 `cd tasks/arrays`
 
-####Testing
+#### Testing
 `node index.js`
 
